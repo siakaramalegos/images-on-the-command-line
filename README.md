@@ -18,6 +18,13 @@ $ brew install imagemagick
 
 **Usage**
 
+To change file formats:
+
+```
+$ convert galaxy.png galaxy.jpg
+```
+
+
 To only resize:
 
 ```
