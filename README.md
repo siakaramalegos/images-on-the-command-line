@@ -78,3 +78,21 @@ $ cwebp -lossless source.png -o output.webp
 ```
 
 For lossless, control compression with -z (0-9 with 9 being highest compression but also longest encoding).
+
+## svgexport
+
+Want to export complex svg's to png? [svgexport](https://github.com/shakiba/svgexport) is a great tool that does this well - more similar to how a browser would render the svg.
+
+**Installation**
+
+```bash
+$ npm install svgexport -g
+```
+
+**Usage**
+
+Convert svg to png (theoretically with 32px width but for me this exported with the full svg width):
+
+```bash
+$ svgexport input.svg output.png 32:
+```
