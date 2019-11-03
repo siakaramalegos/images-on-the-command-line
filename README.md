@@ -50,6 +50,12 @@ Explanation:
 
 Info from https://superuser.com/questions/275476/square-thumbnails-with-imagemagick-convert
 
+To change quality level to 75% (see [docs](https://imagemagick.org/script/command-line-options.php#quality) for full meaning between jpg and png):
+
+```
+$ convert rinput.jpg -quality 75 output.jpg
+```
+
 ## `cwebp`
 
 [Documentation](https://developers.google.com/speed/webp/docs/cwebp)
