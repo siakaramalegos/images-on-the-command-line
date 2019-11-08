@@ -16,7 +16,7 @@ On a Mac, to install ImageMagick, use homebrew:
 $ brew install imagemagick
 ```
 
-**Usage**
+**Usage - Single File**
 
 To change file formats:
 
@@ -54,6 +54,20 @@ To change quality level to 75% (see [docs](https://imagemagick.org/script/comman
 
 ```
 $ convert rinput.jpg -quality 75 output.jpg
+```
+
+**Usage - Batch convert**
+
+To convert all png files in the current directory to jpg in the /converted/ directory (must create the output directory before running the command):
+
+```
+$ mogrify -path converted -format jpg *.png
+```
+
+To resize all jpg files in the current directory to 1360px wide:
+
+```
+$ mogrify -resize 1360 *.jpg
 ```
 
 ## `cwebp`
