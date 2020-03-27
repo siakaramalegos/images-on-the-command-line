@@ -79,7 +79,7 @@ $ mogrify -resize 1360 *.jpg
 On a Mac, to install `cwebp`, use homebrew:
 
 ```
-$ brew install cwebp
+$ brew install webp
 ```
 For Windows `choco install webp`, Red Hat `yum install libwebp-tools`, Node-based `npm i -g cwebp-bin`
 
